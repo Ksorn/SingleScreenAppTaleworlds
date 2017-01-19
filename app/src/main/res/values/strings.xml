@@ -5,8 +5,9 @@
     <string name="location">Galyum Blok, ODTÜ Teknokent Ankara, Tr 06531</string>
     <string name="email">info@taleworlds.com</string>
     <string name="mount_blade"><![CDATA[Mount & Blade]]></string>
-    <string name="mount_blade_warband"><![CDATA[Mount & Blade: Warband]]></string>
-    <string name="wfas"><![CDATA[Mount & Blade: With Fire and Sword]]></string>
+    <string name="mount_blade_warband"><![CDATA[Mount & Blade Warband]]></string>
+    <string name="wfas"><![CDATA[Mount & Blade Warband: With Fire and Sword]]></string>
     <string name="mbnpwars"><![CDATA[Mount & Blade Warband: Napoleonic Wars]]></string>
     <string name="mbvikings"><![CDATA[Mount & Blade Warband: Viking Conquest Reforged Edition]]></string>
+    <string name="font_smallcaps">sans-serif-smallcaps</string>
 </resources>

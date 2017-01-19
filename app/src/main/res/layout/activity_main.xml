@@ -14,7 +14,7 @@
         android:orientation="vertical"
         tools:context="com.example.android.singlescreenapptaleworlds.MainActivity">
 
-        <!--Logo-->
+        <!--Image logo-->
         <ImageView
             android:id="@+id/tw_logo"
             android:layout_width="wrap_content"
@@ -22,37 +22,36 @@
             android:layout_gravity="center"
             android:src="@drawable/taleworlds_logo" />
 
-        <!--Main image-->
+        <!--Image main-->
         <ImageView
             android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/main" />
 
-        <!--Info icon-->
+        <!--Icon info-->
         <ImageView
             android:id="@+id/info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="14dp"
+            android:paddingTop="@dimen/padding_one"
             android:src="@drawable/ic_action_info" />
 
-        <!--Description text-->
+        <!--Text description-->
         <TextView
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="12dp"
+            android:padding="@dimen/padding_two"
             android:text="@string/description"
-            android:textSize="12sp" />
+            android:textSize="@dimen/text_one" />
 
-        <!--Staff image-->
+        <!--Image staff-->
         <ImageView
             android:id="@+id/staff"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:background="@color/colorPrimaryDark"
+            android:layout_height="@dimen/image_main_height"
             android:src="@drawable/staff" />
 
         <!--Location info-->
@@ -60,23 +59,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="12dp">
+            android:padding="@dimen/padding_two">
 
-            <!--Location icon-->
+            <!--Icon location-->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingRight="6dp"
+                android:paddingRight="@dimen/padding_right_location"
                 android:src="@drawable/ic_room" />
 
-            <!--Location text-->
+            <!--Text location-->
             <TextView
                 android:id="@+id/location_text"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="@string/location"
-                android:textSize="12sp" />
+                android:textSize="@dimen/text_one" />
 
         </LinearLayout>
 
@@ -85,23 +84,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="12dp">
+            android:padding="@dimen/padding_two">
 
-            <!--Email icon-->
+            <!--Icon email-->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingRight="12dp"
+                android:paddingRight="@dimen/padding_right_email"
                 android:src="@drawable/ic_email" />
 
-            <!--Email text-->
+            <!--Text email-->
             <TextView
                 android:id="@+id/email_text"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="@string/email"
-                android:textSize="12sp" />
+                android:textSize="@dimen/text_one" />
 
         </LinearLayout>
 
@@ -110,42 +109,44 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="12dp">
+            android:padding="@dimen/padding_three">
 
             <!--Website-->
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/image_width_zero"
                 android:layout_height="match_parent"
+                android:padding="@dimen/padding_three"
                 android:layout_weight="1"
                 android:src="@drawable/website" />
 
 
             <!--Facebook-->
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/image_width_zero"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:src="@drawable/ic_action_facebook" />
 
             <!--Twitter-->
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/image_width_zero"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:src="@drawable/ic_action_twitter" />
 
         </LinearLayout>
 
-
+        <!--Text store-->
         <TextView
             android:id="@+id/store"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#BCAAA4"
+            android:background="@color/colorStore"
+            android:fontFamily="@string/font_smallcaps"
             android:gravity="center"
-            android:padding="12dp"
+            android:padding="@dimen/padding_two"
             android:text="@string/store"
-            android:textSize="14sp"
+            android:textSize="@dimen/text_two"
             android:textStyle="bold" />
 
         <!--Mount & Blade-->
@@ -154,19 +155,19 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <!--Mount and blade image-->
+            <!--Image - Mount and blade-->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/mountandblade"/>
-            <!--Mount and blade text-->
-            <TextView
+                android:src="@drawable/mountandblade" />
+            <!--Button - Mount and blade-->
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="@string/font_smallcaps"
                 android:text="@string/mount_blade"
-                android:gravity="center"/>
-
-
+                android:textAllCaps="false"
+                android:textSize="@dimen/button_text_size" />
 
         </LinearLayout>
 
@@ -175,17 +176,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <!--Warband image-->
+            <!--Image - Warband-->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/warband"/>
-            <!--Warband text-->
-            <TextView
+                android:src="@drawable/warband" />
+            <!--Button - Warband-->
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="@string/font_smallcaps"
                 android:text="@string/mount_blade_warband"
-                android:gravity="center"/>
+                android:textAllCaps="false"
+                android:textSize="@dimen/button_text_size" />
 
         </LinearLayout>
 
@@ -198,13 +201,15 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/mbfire"/>
-            <!--Mount & Blade: With Fire and Sword text-->
-            <TextView
+                android:src="@drawable/mbfire" />
+            <!--Button - Mount & Blade: With Fire and Sword-->
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="@string/font_smallcaps"
                 android:text="@string/wfas"
-                android:gravity="center"/>
+                android:textAllCaps="false"
+                android:textSize="@dimen/button_text_size" />
 
         </LinearLayout>
 
@@ -213,17 +218,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <!--Mount & Blade Warband: Napoleonic Wars image-->
+            <!--Image - Mount & Blade Warband: Napoleonic Wars-->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/mbnpwars"/>
-            <!--Mount & Blade Warband: Napoleonic Wars text-->
-            <TextView
+                android:src="@drawable/mbnpwars" />
+            <!--Button - Mount & Blade Warband: Napoleonic Wars-->
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="@string/font_smallcaps"
                 android:text="@string/mbnpwars"
-                android:gravity="center"/>
+                android:textAllCaps="false"
+                android:textSize="@dimen/button_text_size" />
 
         </LinearLayout>
 
@@ -232,17 +239,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <!--Mount & Blade Warband: Viking Conquest Reforged Edition image-->
+
+            <!--Image - Mount & Blade Warband: Viking Conquest Reforged Edition-->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/mbvikings"/>
-            <!--Mount & Blade Warband: Viking Conquest Reforged Edition text-->
-            <TextView
+                android:src="@drawable/mbvikings" />
+
+            <!--Button - Mount & Blade Warband: Viking Conquest Reforged Edition-->
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="@string/font_smallcaps"
                 android:text="@string/mbvikings"
-                android:gravity="center"/>
+                android:textAllCaps="false"
+                android:textSize="@dimen/button_text_size" />
 
         </LinearLayout>
 
