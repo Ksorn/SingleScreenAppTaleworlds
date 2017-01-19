@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Single Screen App Taleworlds</string>
+    <string name="description"><![CDATA[TaleWorlds Entertainment is an independent video game development company located in Ankara, Turkey. \nFounded in 2005 by Armağan Yavuz after starting work in game development as a hobby. \nKnown for its leading Mount&Blade game franchise, TaleWorlds is one of the most successful indie developers worldwide. \nThe studio also grew with the game, and is continuing to add talented graphics artists and programmers to its core team. \nThe team is currently developing the much anticipated sequel; Mount&Blade 2: Bannerlord. \nRelease date is yet to be announced.]]></string>
+    <string name="store">Store</string>
+    <string name="location">Galyum Blok, ODTÜ Teknokent Ankara, Tr 06531</string>
+    <string name="email">info@taleworlds.com</string>
+    <string name="mount_blade"><![CDATA[Mount & Blade]]></string>
+    <string name="mount_blade_warband"><![CDATA[Mount & Blade: Warband]]></string>
+    <string name="wfas"><![CDATA[Mount & Blade: With Fire and Sword]]></string>
+    <string name="mbnpwars"><![CDATA[Mount & Blade Warband: Napoleonic Wars]]></string>
+    <string name="mbvikings"><![CDATA[Mount & Blade Warband: Viking Conquest Reforged Edition]]></string>
+</resources>

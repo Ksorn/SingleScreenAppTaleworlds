@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTW">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="com.example.android.singlescreenapptaleworlds.MainActivity">
+
+        <!--Logo-->
+        <ImageView
+            android:id="@+id/tw_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/taleworlds_logo" />
+
+        <!--Main image-->
+        <ImageView
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main" />
+
+        <!--Info icon-->
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:src="@drawable/ic_action_info" />
+
+        <!--Description text-->
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/description"
+            android:textSize="12sp" />
+
+        <!--Staff image-->
+        <ImageView
+            android:id="@+id/staff"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/staff" />
+
+        <!--Location info-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <!--Location icon-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:src="@drawable/ic_room" />
+
+            <!--Location text-->
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/location"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!--Email info-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <!--Email icon-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="12dp"
+                android:src="@drawable/ic_email" />
+
+            <!--Email text-->
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/email"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!--Website, Facebook & Twitter info-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <!--Website-->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/website" />
+
+
+            <!--Facebook-->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_action_facebook" />
+
+            <!--Twitter-->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_action_twitter" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BCAAA4"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/store"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!--Mount & Blade-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Mount and blade image-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mountandblade"/>
+            <!--Mount and blade text-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/mount_blade"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+
+        <!--Mount & Blade: Warband-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Warband image-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/warband"/>
+            <!--Warband text-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/mount_blade_warband"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <!--Mount & Blade: With Fire and Sword-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Mount & Blade: With Fire and Sword image-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mbfire"/>
+            <!--Mount & Blade: With Fire and Sword text-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/wfas"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <!--Mount & Blade Warband: Napoleonic Wars-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Mount & Blade Warband: Napoleonic Wars image-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mbnpwars"/>
+            <!--Mount & Blade Warband: Napoleonic Wars text-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/mbnpwars"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <!--Mount & Blade Warband: Viking Conquest Reforged Edition-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Mount & Blade Warband: Viking Conquest Reforged Edition image-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mbvikings"/>
+            <!--Mount & Blade Warband: Viking Conquest Reforged Edition text-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/mbvikings"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
