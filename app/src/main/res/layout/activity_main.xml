@@ -63,9 +63,9 @@
 
             <!--Icon location-->
             <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingRight="@dimen/padding_right_location"
                 android:src="@drawable/ic_room" />
 
             <!--Text location-->
@@ -73,6 +73,7 @@
                 android:id="@+id/location_text"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_left_one"
                 android:gravity="center"
                 android:text="@string/location"
                 android:textSize="@dimen/text_one" />
@@ -90,19 +91,19 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingRight="@dimen/padding_right_email"
                 android:src="@drawable/ic_email" />
 
             <!--Text email-->
             <TextView
-                android:id="@+id/email_text"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_left_one"
                 android:gravity="center"
                 android:text="@string/email"
                 android:textSize="@dimen/text_one" />
 
         </LinearLayout>
+
 
         <!--Website, Facebook & Twitter info-->
         <LinearLayout
@@ -115,10 +116,9 @@
             <ImageView
                 android:layout_width="@dimen/image_width_zero"
                 android:layout_height="match_parent"
-                android:padding="@dimen/padding_three"
                 android:layout_weight="1"
+                android:padding="@dimen/padding_three"
                 android:src="@drawable/website" />
-
 
             <!--Facebook-->
             <ImageView
@@ -135,6 +135,7 @@
                 android:src="@drawable/ic_action_twitter" />
 
         </LinearLayout>
+
 
         <!--Text store-->
         <TextView
@@ -157,17 +158,12 @@
 
             <!--Image - Mount and blade-->
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/image_style_one"
                 android:src="@drawable/mountandblade" />
             <!--Button - Mount and blade-->
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@string/font_smallcaps"
-                android:text="@string/mount_blade"
-                android:textAllCaps="false"
-                android:textSize="@dimen/button_text_size" />
+                style="@style/button_style"
+                android:text="@string/mount_blade" />
 
         </LinearLayout>
 
@@ -178,17 +174,12 @@
             android:orientation="horizontal">
             <!--Image - Warband-->
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/image_style_one"
                 android:src="@drawable/warband" />
             <!--Button - Warband-->
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@string/font_smallcaps"
-                android:text="@string/mount_blade_warband"
-                android:textAllCaps="false"
-                android:textSize="@dimen/button_text_size" />
+                style="@style/button_style"
+                android:text="@string/mount_blade_warband" />
 
         </LinearLayout>
 
@@ -199,17 +190,12 @@
             android:orientation="horizontal">
             <!--Mount & Blade: With Fire and Sword image-->
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/image_style_one"
                 android:src="@drawable/mbfire" />
             <!--Button - Mount & Blade: With Fire and Sword-->
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@string/font_smallcaps"
-                android:text="@string/wfas"
-                android:textAllCaps="false"
-                android:textSize="@dimen/button_text_size" />
+                style="@style/button_style"
+                android:text="@string/wfas" />
 
         </LinearLayout>
 
@@ -220,17 +206,12 @@
             android:orientation="horizontal">
             <!--Image - Mount & Blade Warband: Napoleonic Wars-->
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/image_style_one"
                 android:src="@drawable/mbnpwars" />
             <!--Button - Mount & Blade Warband: Napoleonic Wars-->
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@string/font_smallcaps"
-                android:text="@string/mbnpwars"
-                android:textAllCaps="false"
-                android:textSize="@dimen/button_text_size" />
+                style="@style/button_style"
+                android:text="@string/mbnpwars" />
 
         </LinearLayout>
 
@@ -242,18 +223,13 @@
 
             <!--Image - Mount & Blade Warband: Viking Conquest Reforged Edition-->
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/image_style_one"
                 android:src="@drawable/mbvikings" />
 
             <!--Button - Mount & Blade Warband: Viking Conquest Reforged Edition-->
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@string/font_smallcaps"
-                android:text="@string/mbvikings"
-                android:textAllCaps="false"
-                android:textSize="@dimen/button_text_size" />
+                style="@style/button_style"
+                android:text="@string/mbvikings" />
 
         </LinearLayout>
 
